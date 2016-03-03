@@ -2008,6 +2008,27 @@ body:not(.post-template) .post-title {
 
 }
 
+/* brinkbit */
+h1.page-title {
+    color: #1c4463;
+    font-size: 30px;
+}
+h2.page-description {
+    color: #1c4463;
+    font-size: 20px;
+}
+.icon-arrow-left {
+    color: #1c4463;
+}
+.icon-arrow-left:hover {
+    color: #6fb7bd;
+}
+@media (max-width: 720px) {
+	h1.page-title {
+    	padding-top: 100px;
+	}
+}
+
 
 /* ==========================================================================
    13. Animations
