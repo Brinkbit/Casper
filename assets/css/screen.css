@@ -31,7 +31,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-body { margin: 0; }
+body { margin: 0; margin-top: 48px;}
 article, aside, details,
 figcaption, figure,
 footer, header,
@@ -531,7 +531,7 @@ body.nav-opened .site-wrapper {
 }
 
 /* Navigation */
-body.nav-opened .nav-cover {
+/*body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -699,7 +699,7 @@ body.nav-opened .nav {
     right: 30px;
     height: 38px;
     padding: 0 20px;
-    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    color: #111 !important;
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto Slab', serif;
@@ -713,7 +713,9 @@ body.nav-opened .nav {
 .subscribe-button:before {
     font-size: 9px;
     margin-right: 6px;
-}
+}*/
+
+/* Overides `.nav a:link, .nav a:visited` colour */
 
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -2027,6 +2029,119 @@ h2.page-description {
 	h1.page-title {
     	padding-top: 100px;
 	}
+}
+
+.navbar {
+    background: #050f17;
+    border: none;
+    min-height: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+
+}
+
+.navbar-brand .navbar-logo {
+    margin-left: 25px;
+}
+
+.navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #447c91;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-shadow: none;
+    color: #447c91;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #6fb7bd;
+}
+
+/*
+*
+* Side Menu nav Bar
+*
+*/
+
+/* the slide nav toggle button in the top left*/
+.navMenuBtn {
+    margin: 0px;
+    background: none;
+    border: 0px;
+}
+
+
+
+.navmenu-default .navmenu-nav>li>a,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+    font-size: 25px;
+    background: none;
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #447c91;
+}
+
+.navmenu-default .navmenu-nav>.active>a,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a,
+.navmenu-default .navmenu-nav>.active>a:hover,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover,
+.navmenu-default .navmenu-nav>.active>a:focus,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
+    color: @brinkbit-night-secondary-2;
+    background: none;
+}
+
+.navmenu-default .navmenu-nav>li>a:hover,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover,
+.navmenu-default .navmenu-nav>li>a:focus,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+    color: @brinkbit-night-secondary-2;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+/*//override some default styles in the navMenu Button*/
+.navbar-default .navbar-toggle .icon-bar {
+    background: none;
+    background-color: #a1cbe0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    z-index: 2;
+    background: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #a1cbe0;
+    background-color: #081826;
+    background-image: none;
+    box-shadow: none;
+}
+
+
+/*// the actual container of the slide nav*/
+#slideNavMenu {
+    background-color: #050f17;
+    border-color: #447c91;
+    top: 50px;
+}
+
+a.blog-logo {
+    color: #ffffff;
+}
+
+a.blog-logo:hover {
+    color: #a1cbe0;
 }
 
 
