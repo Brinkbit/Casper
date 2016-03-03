@@ -26,11 +26,12 @@
    ========================================================================== */
 
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-body { margin: 0; }
+body { margin: 0; margin-top: 48px;}
 article, aside, details,
 figcaption, figure,
 footer, header,
@@ -42,7 +43,7 @@ audio, canvas, progress, video {
 }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
-a { background-color: transparent;}
+a { background-color: transparent; cursor: pointer;}
 a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
@@ -183,7 +184,8 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -210,7 +212,8 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
     text-rendering: geometricPrecision;
 }
 
@@ -524,11 +527,11 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Navigation */
-body.nav-opened .nav-cover {
+/*body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -696,10 +699,10 @@ body.nav-opened .nav {
     right: 30px;
     height: 38px;
     padding: 0 20px;
-    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    color: #111 !important;
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -710,7 +713,9 @@ body.nav-opened .nav {
 .subscribe-button:before {
     font-size: 9px;
     margin-right: 6px;
-}
+}*/
+
+/* Overides `.nav a:link, .nav a:visited` colour */
 
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -871,7 +876,7 @@ body.nav-opened .nav {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #fff;
 }
 
@@ -879,8 +884,8 @@ body.nav-opened .nav {
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
-    font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -1134,6 +1139,7 @@ body:not(.post-template) .post-title {
     margin: 1rem 0;
     font-size: 1.4rem;
     line-height: 1.75em;
+    font-family: 'Roboto', serif;
 }
 
 /* list of author links - location / url */
@@ -1311,7 +1317,8 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1397,7 +1404,7 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -2001,6 +2008,150 @@ body:not(.post-template) .post-title {
         width: 100%;
     }
 
+}
+
+/* brinkbit */
+h1.page-title {
+    color: #1c4463;
+    font-size: 30px;
+}
+h2.page-description {
+    color: #1c4463;
+    font-size: 20px;
+}
+.icon-arrow-left {
+    color: #1c4463;
+}
+.icon-arrow-left:hover {
+    color: #6fb7bd;
+}
+@media (max-width: 720px) {
+	h1.page-title {
+    	padding-top: 100px;
+	}
+}
+
+.navbar {
+    background: #050f17;
+    border: none;
+    min-height: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+
+}
+
+.navbar-brand .navbar-logo {
+    margin-left: 25px;
+}
+
+.navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #447c91;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-shadow: none;
+    color: #447c91;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #6fb7bd;
+}
+
+/*
+*
+* Side Menu nav Bar
+*
+*/
+
+/* the slide nav toggle button in the top left*/
+.navMenuBtn {
+    margin: 0px;
+    background: none;
+    border: 0px;
+}
+
+.navMenuHeader {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 20px 20px 0;
+    color: #6fb7bd;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.navmenu-default .navmenu-nav>li>a,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    background: none;
+    display: block;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    color: #447c91;
+}
+
+.navmenu-default .navmenu-nav>.active>a,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a,
+.navmenu-default .navmenu-nav>.active>a:hover,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover,
+.navmenu-default .navmenu-nav>.active>a:focus,
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
+    color: #a1cbe0;
+    background: none;
+}
+
+.navmenu-default .navmenu-nav>li>a:hover,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover,
+.navmenu-default .navmenu-nav>li>a:focus,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+    color: #a1cbe0;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+/*//override some default styles in the navMenu Button*/
+.navbar-default .navbar-toggle .icon-bar {
+    background: none;
+    background-color: #a1cbe0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    z-index: 2;
+    background: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #a1cbe0;
+    background-color: #081826;
+    background-image: none;
+    box-shadow: none;
+}
+
+
+/*// the actual container of the slide nav*/
+#slideNavMenu {
+    background-color: #050f17;
+    border-color: #447c91;
+    top: 50px;
+}
+
+a.blog-logo {
+    color: #ffffff;
+}
+
+a.blog-logo:hover {
+    color: #a1cbe0;
 }
 
 
