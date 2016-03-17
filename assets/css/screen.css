@@ -2019,7 +2019,7 @@ body:not(.post-template) .post-title {
 
 }
 
-/* brinkbit */
+/* brinkbit general stuff */
 h1.page-title {
     color: #1c4463;
     font-size: 30px;
@@ -2039,6 +2039,69 @@ h2.page-description {
     	padding-top: 100px;
 	}
 }
+
+/* brinkbit signupCTA footer */
+
+.signupCTABox {
+        border: 2px #6fb7bd solid;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 5px;
+        padding-left: 5px;
+}
+
+h2.signupCTA {
+    text-align: center;
+    font-size: 25px;
+}
+
+p.signupCTA {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.betaBtn {
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    background-color: #6fb7bd;
+    color: #ffffff;
+}
+
+.betaBtn:hover {
+    background-color: #266da8;
+    color: #ffffff;
+}
+
+.beta-signup {
+    background-color: #6fb7bd;
+    border: 1px solid #6fb7bd;
+    margin-left: 5vw;
+    margin-right: 4vw;
+}
+
+.email-signup {
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.email-signup-top {
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border-color: #e9eef2;
+    color: #6fb7bd;
+    box-shadow: none;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+
+/* brinkbit navbar */
 
 .navbar {
     background: #050f17;
@@ -2073,7 +2136,7 @@ h2.page-description {
 
 /*
 *
-* Side Menu nav Bar
+* Brinkbit Side Menu nav Bar
 *
 */
 
@@ -2147,8 +2210,6 @@ h2.page-description {
     box-shadow: none;
 }
 
-
-/*// the actual container of the slide nav*/
 #slideNavMenu {
     background-color: #050f17;
     border-color: #447c91;
